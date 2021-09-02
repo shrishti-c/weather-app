@@ -1,6 +1,5 @@
 FROM ubuntu
 RUN apt-get update
-WORKDIR /app
-ADD . /app
+ADD . .
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
